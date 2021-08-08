@@ -2,17 +2,61 @@
 *{
   scroll-behavior: smooth;
 }
- img{
-   width:300px;
- }
+
+
+.sidenav 
+{
+  height: 100%;
+  width: 200px; 
+  position: fixed;
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  background-color: rgb(40, 37, 32);
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-color: rgba(180, 190, 188, 0.918);
+  box-shadow: 5px 1px 3.5px rgba(0, 0, 0, 0.651);
+ 
+}
+.sidenav a
+{
+  padding: 15px 8px 6px 20px;
+  
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(163, 146, 105);
+  display: block;
+  text-align: center;
+  font-family: "Special Elite";
+ 
+   transition: 1s ease-in-out;
+}
+.sidenav a:hover
+{
+  padding: 15px 8px 6px 2px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(82, 59, 0);
+  display: block;
+  
+  transform: translate(15%);
+
+}
+
+
+.main
+{
+ margin-left: 200px;
+}
+
 
 #header{
   padding-top: 10px;
   background-attachment: fixed;
-  
-  background-image: url('bgg.jpg');
-   background-size: 100% 100%;
-   padding-bottom: 300px;
+  background-image: url('images/backgrounds/headerbg.jpg');
+  background-size: 100% 100%;
+  padding-bottom: 300px;
   align-content: middle;
 }
 .navbar 
@@ -29,32 +73,6 @@
   margin: auto;
 }
 
-.sidenav {
-  height: 100%;
-  width: 200px; /* Set the width of the sidebar */
-  position: fixed;
-  z-index: 1;
-  top: 0; 
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-  box-shadow: 3px;
-  border-color: rgba(180, 190, 188, 0.918);
-  font-family: Cambria;
-}
-
-.sidenav a
-{
-  padding: 15px 8px 6px 2px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  display: block;
-  text-align: center;
-  }
-
-
 .menu{
   color:black;
   font-size: 15px;
@@ -62,8 +80,9 @@
   padding: 5px;
 }
 
-.title{
-  color:rgb(54, 30, 2);
+.title
+{
+  color: rgb(82, 59, 0);
   font-size: 30px;
   margin: auto;
   text-align: center;
@@ -72,36 +91,39 @@
 
 h1{
   font-size: 20px;
-  font-weight: bold
+  font-weight: bold;
+  font-family: "Special Elite";
 }
 p{
-  font-size: 16px;
+  font-size: 15px;
+  color: black;
+  font-family: "Special Elite";
 }
 
 h2{
   font-size:14px;
   color:rgb(114, 65, 0);
   font-weight: bold;
+  font-family: "Special Elite";
 }
 
 #dinnerMenu{
   
-  background-image: url('paper.jpg');
+  background-image: url('images/backgrounds/menubg.jpg');
   padding:10px;
   border: 20px;
   border-color:black;
-  box-shadow: 3px;
- 
-
+  box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.651);
+  background-attachment: fixed;
 }
 
 #gallery{
   padding: 10px;
+  background-attachment: fixed;
+ 
 }
 
-.main{
- margin-left: 200px;
-}
+
 
 
 @media screen and (max-height: 450px) 
@@ -140,5 +162,64 @@ h2{
   clear: both;
 }
 
+#footermenu
+{
+  background-image: url('images/backgrounds/blackbg.jpg');
+  padding-top: 10px;
+  background-attachment: fixed;
+  font-family: "Special Elite";
+  color: white;
+}
+
+#copyright
+{
+   padding:10px;
+   background-color: rgb(29, 27, 23);
+   
+ }
+ .copyrights
+ {
+   color: rgb(163, 146, 105);
+   font-family: "Special Elite";
+   text-align: right;
+ }
 
 
+
+#sidelogo{
+  
+  border-radius: 300px;
+  height:auto;
+  
+  -webkit-animation: spin 1s linear 3;
+  -moz-animation:  spin 1s linear 3;
+  animation: spin 1s linear 3;
+}
+
+#sidelogo:hover{
+
+  background-color: rgb(80, 80, 80); 
+  
+}
+
+
+@-webkit-keyframes spin
+{
+  100%
+  {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin
+{
+  100%
+  {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+  
+}
