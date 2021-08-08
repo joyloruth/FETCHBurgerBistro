@@ -1,0 +1,144 @@
+
+*{
+  scroll-behavior: smooth;
+}
+ img{
+   width:300px;
+ }
+
+#header{
+  padding-top: 10px;
+  background-attachment: fixed;
+  
+  background-image: url('bgg.jpg');
+   background-size: 100% 100%;
+   padding-bottom: 300px;
+  align-content: middle;
+}
+.navbar 
+{ 
+  width:90%;
+  background-image: linear-gradient(to right,  white,#e7e7e7);
+  box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.651);
+  font-size: 20px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: outset;
+  border-color: rgba(180, 190, 188, 0.918);
+  margin: auto;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed;
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 3px;
+  border-color: rgba(180, 190, 188, 0.918);
+  font-family: Cambria;
+}
+
+.sidenav a
+{
+  padding: 15px 8px 6px 2px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  text-align: center;
+  }
+
+
+.menu{
+  color:black;
+  font-size: 15px;
+  font-family: cambria;
+  padding: 5px;
+}
+
+.title{
+  color:rgb(54, 30, 2);
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+  font-family: "Special Elite";
+}
+
+h1{
+  font-size: 20px;
+  font-weight: bold
+}
+p{
+  font-size: 16px;
+}
+
+h2{
+  font-size:14px;
+  color:rgb(114, 65, 0);
+  font-weight: bold;
+}
+
+#dinnerMenu{
+  
+  background-image: url('paper.jpg');
+  padding:10px;
+  border: 20px;
+  border-color:black;
+  box-shadow: 3px;
+ 
+
+}
+
+#gallery{
+  padding: 10px;
+}
+
+.main{
+ margin-left: 200px;
+}
+
+
+@media screen and (max-height: 450px) 
+{
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 450px) 
+{
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .sidenav {width:175px; }
+
+}
+
+@media screen and (max-height: 450px) 
+{
+  .main {padding-top: 15px;}
+  .main{font-size: 50%;}
+}
+
+#about{
+  background-color: red;
+  color:black;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
