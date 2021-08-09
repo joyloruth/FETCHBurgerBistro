@@ -27,8 +27,10 @@
   padding-top: 20px;
   border-color: rgba(180, 190, 188, 0.918);
   box-shadow: 5px 1px 3.5px rgba(0, 0, 0, 0.651);
-  background-image: url('images/backgrounds/door.jpg');
+  background-image: url('images/backgrounds/rustdoor.jpg');
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
  
 }
 .sidenav a
