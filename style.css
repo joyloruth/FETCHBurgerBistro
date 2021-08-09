@@ -3,20 +3,32 @@
   scroll-behavior: smooth;
 }
 
+#preload{
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height:100% ;
+
+}
+
 
 .sidenav 
 {
   height: 100%;
-  width: 200px; 
+  width: 230px; 
   position: fixed;
   z-index: 1;
   top: 0; 
   left: 0;
-  background-color: rgb(40, 37, 32);
+  
   overflow-x: hidden;
   padding-top: 20px;
   border-color: rgba(180, 190, 188, 0.918);
   box-shadow: 5px 1px 3.5px rgba(0, 0, 0, 0.651);
+  background-image: url('images/backgrounds/door.jpg');
+  background-position: center;
  
 }
 .sidenav a
@@ -31,6 +43,7 @@
   font-family: "Special Elite";
  
    transition: 1s ease-in-out;
+   
 }
 .sidenav a:hover
 {
@@ -47,7 +60,7 @@
 
 .main
 {
- margin-left: 200px;
+ margin-left: 230px;
 }
 
 
@@ -119,7 +132,8 @@ h2{
 
 #gallery{
   padding: 10px;
-  background-attachment: fixed;
+ 
+  background-color: beige;
  
 }
 
@@ -147,28 +161,50 @@ h2{
 }
 
 #about{
-  background-color: red;
-  color:black;
+  padding:10px;
+  margin:auto;
+  align-content: center;
+  background-attachment: fixed;
+  background-image: url('images/backgrounds/blackbg.jpg');
+  
+  
 }
 
-.column {
-  float: left;
-  width: 50%;
+#about .colleft{
+  
+  color:rgb(255, 255, 255);
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+  width: 40%;
+  
+  
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#about .colright{
+  
+  color:rgb(0, 0, 0);
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+  width: 60%;
+  
+  
 }
+
+
+
 
 #footermenu
 {
-  background-image: url('images/backgrounds/blackbg.jpg');
+  background-color: rgb(249, 249, 249);
   padding-top: 10px;
+  padding-bottom: 10px;
   background-attachment: fixed;
   font-family: "Special Elite";
-  color: white;
+  color: rgb(101, 101, 101);
+  margin:auto;
+  background: cover;
 }
 
 #copyright
@@ -194,6 +230,7 @@ h2{
   -webkit-animation: spin 1s linear 3;
   -moz-animation:  spin 1s linear 3;
   animation: spin 1s linear 3;
+  
 }
 
 #sidelogo:hover{
