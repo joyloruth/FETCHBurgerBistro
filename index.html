@@ -6,8 +6,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       
     <!--******** BOOTSTRAP CSS ********************--> 
+
+    
+    <link rel="preload" as="style" href="style.css">
+
+
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link href="style.css" rel="stylesheet" type="text/css" />
+      
 
     <!--********GOOGLE FONTS ********************--> 
       <link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
@@ -19,40 +25,43 @@
   </head>
 
   <body>
+  
+      <!--******** SIDE NAVIGATION ********************--> 
+    <div class = "vault">
+      <div id = "preloader">
+       
+        <img src="images/noodle.png" id="noodle">
+      </div>
+    </div>
 
-   <!-- <section id = "preload">
-      "Loading on ......"
-      <center><img src="images/logos/favicon.png" id = "sidelogo" alt="logo" style="width:110px;"></center>
-    
-    </section> -->
-
-    
-
-  <!--******** SIDE NAVIGATION ********************--> 
-  <div class="sidenav">
+    <div class="sidenav">
     <br><br>
-      <center><img src="images/logos/favicon.png" id = "sidelogo" alt="logo" style="width:110px;">
+      <center>
+        <img src="images/logos/favicon.png" id = "sidelogo" alt="logo" style="width:110px;">
       <br></br>
-      
         <a href="#dinnerMenu">MENU</a>
-        <a href="#reservations">RESERVATIONS</a>
         <a href="#about">ABOUT</a>
         <a href="#gallery">GALLERY</a>
         <a href="#contact">CONTACT</a>
-    <br></br>
-        <p> 3234 Melrose Blvd</p>
-        <p> Los Angeles, CA 56768</p>
       </center>
-  </div>
+    <br></br>
+    </div>
+    </section>
+    
+  
 
 <!--******** MAIN SECTION ********************--> 
-  <div class = "main">
-
+  <section id = "main">
+     
+  
     <!--******** HEADER SECTION ********************--> 
-      <section id ="header">
+      <div class ="header">
         <br></br>
+        <br></br>
+        
+      </div>
 
-      <!--******** TOP BAR ********************--> 
+      <!--******** TOP BAR ********************
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
           <a class="navbar-brand" href="joyloruth.com">
             <img src="images/logos/fetchlogo.png" alt="Logo" style="width:120px;">
@@ -62,90 +71,92 @@
           </button>
           <div class="collapse navbar-collapse nav" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <a class = "menu" href="#dinnerMenu"> 615-345-7896 </a>
+              <a class = "menu" href="#dinnerMenu"> Phone: 1-(800)-456-0000 </a>
             </ul>
           </div>
         </nav>
         <br></br>
         <center><img src="images/logos/favicon.png" id = "logo" alt="logo" style="width:300px;"></center>
-      </section>
-
+      </section> -->
+     
 
     <!--******** DINNER MENU  ********************--> 
-      <section id = "dinnerMenu">
+      <div class = "dinnerMenu">
 
         <div class="container">
 
-          <div class="title mt-4 mb-0">FETCH Dinner Menu</div>
+          <div class="title mt-4 mb-0">FETCH Special Rolls </div>
 
           <hr class="mt-2 mb-5">
           <div class="row text-center text-lg-start">
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1>Jumbo Shrimp Cocktail</h1><h2>23</h2>
-                <p> Jumbo fried shrimp, cocktail sauce </p>
+              <h1>Tiger Roll</h1><h2>13.95</h2>
+                <p> White tuna tempura, crab meat, cucumber, asparagus, atop of shrimp avocado and black tobiko and Japanese mayo </p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1>Bacon Avocado Burger<h2>26<h2></h1>
-                <p>8oz classic beef burger, gouda cheese, pickled onions, slices of avocado</p>
+              <h1>Philadelphia Roll<h2>6.95<h2></h1>
+                <p>Smoked salmon, cream cheese, avocado, cucumber</p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1>Lobster Mac & Cheese</h1><h2>31</h2>
-                <p> Maine lobster, mascarpone, breadcrumbs topped with fresh grated parmasan<p>
+              <h1>Rainbow Roll</h1><h2>9.95</h2>
+                <p> Cucumber, avo, crab meat atop of tuna,  salmon, red snapper and  avocado slices<p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-                <h1>Parmesan Truffle Fries<h2>29<h2></h1>
-                  <p> Seasoned fried seasoned with our signature truffle oil and topped with fresh parmasan cheese.</p>
+                <h1>Boston Roll<h2>29<h2></h1>
+                  <p> Shrimp, lettuce, cucumber, mayo</p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1>Mushroom Spaghetti</h1> <h2>29</h2>
-                  <p>Wild mushroom, snow peas tomato, parmesan</p>
-                  <p>Add Jumbo Shrimp<p> <h2>+21</h2>
+              <h1>New York Roll</h1> <h2>4.95</h2>
+                  <p>Salmon skin, cucumber and scallion</p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1> Tartare Trio Treat</h1><h2>20</h2>
-                <p>Salmon, tuna, wasabi creme fraiche</p>
+              <h1> Paradise Roll</h1><h2>20</h2>
+                <p>Spicy tuna, white tuna and avocado, atop of spicy salmon and lobster salad, chef special sauce and crunch
+</p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1> Smoked Salmon Roll</h1><h2>20</h2>
-                <p>cream cheese, cucumber, avocado roll</p>
+              <h1> Golden Dragon Roll</h1><h2>10.95</h2>
+                <p>Eel, cucumber, atop of slice mango and eel sauce</p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1> Carnival Cake</h1><h2>20</h2>
-                <p>Topped with blueberry compote, maple syrup</p>
+              <h1> Lobster Roll</h1><h2>14.95</h2>
+                <p>Lobster, mayo, avocado and cucumber wrapped with soy paper</p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1> French Toast</h1><h2>20</h2>
-                <p>Topped with blueberry compote, maple syrup</p>
+              <h1> Godzilla Roll</h1><h2>14.95</h2>
+                <p>Deep fried spicy tuna, cream cheese, avo, eel sauce atop of spicy Kani</p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1>Fetch Cake</h1><h2>31</h2>
-                <p> FETCH signature dessert consisting of salted peanut caramel, torched meringuen<p>
+              <h1>Friday Roll</h1><h2>13.95</h2>
+                <p> Shrimp tempura, king crab, cucumber atop of avocado and five colors tobiko<p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-              <h1> Raspberry Sorbet</h1><h2>18</h2>
-                <p>Fresh sorbet topped with mint leaf</p>
+              <h1> Tiger Roll</h1><h2>13.95</h2>
+                <p>White tuna tempura, crab meat, cucumber, asparagus, atop of shrimp avocado and black tobiko and Japanese mayo</p>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6">
-                <h1> Pistachio Cream</h1><h2>16</h2>
-                  <p>Topped with fresh sweetened fruit compote.</p>
+                <h1> Indy Roll</h1><h2>16</h2>
+                  <p>King crab, tuna, salmon, white tuna wrapped with soy paper</p>
             </div>
           
           </div>
           </div>
+      </div>
         
-      </section>
+      
+
 
 
 
@@ -153,7 +164,7 @@
 <!--******** GALLERY  ********************--> 
 
 <section id = "gallery">
-
+`
 <div class="container">
 
   <div class="title mt-4 mb-0">FETCH GALLERY</div>
@@ -169,7 +180,7 @@
     </div>
     <div class="col-lg-3 col-md-4 col-6">
       <a href="#" class="d-block mb-3 h-100">
-        <img class="img-fluid img-thumbnail" id= "sidelogo" src="images/gallery/strawberrycake.jpg" alt="">
+        <img class="img-fluid img-thumbnail" src="images/gallery/strawberrycake.jpg" alt="">
       </a>
     </div>
     <div class="col-lg-3 col-md-4 col-6">
@@ -184,7 +195,7 @@
     </div>
     <div class="col-lg-3 col-md-4 col-6">
       <a href="#"class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" id= "sidelogo" src="images/gallery/skirtsteak.jpg" alt="">
+        <img class="img-fluid img-thumbnail"  src="images/gallery/skirtsteak.jpg" alt="">
       </a>
     </div>
     <div class="col-lg-3 col-md-4 col-6">
@@ -194,7 +205,7 @@
     </div>
     <div class="col-lg-3 col-md-4 col-6">
       <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" id= "sidelogo" src="images/gallery/pastaplate.jpg" alt="">
+        <img class="img-fluid img-thumbnail" src="images/gallery/pastaplate.jpg" alt="">
       </a>
     </div>
     <div class="col-lg-3 col-md-4 col-6">
@@ -204,7 +215,7 @@
     </div>
     <div class="col-lg-3 col-md-4 col-6">
       <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="images/gallery/palm.jpg" alt="">
+        <img class="img-fluid img-thumbnail" src="images/gallery/eggplate.jpg" alt="">
       </a>
     </div>
     <div class="col-lg-3 col-md-4 col-6">
@@ -233,10 +244,11 @@
 <section id = "about">
   <div class="row">
     <div class="colright">
+      <br></br>
       FETCH Seafood Restaurant & Bar is a one-stop-shop for cuisine and cocktails, providing something for everyone in seamless transitions from daytime brunch to evening dining, and exciting nightlife. With our signature, open kitchen and breathtaking views FETCH is sure to provide a memorable experience.
     </div>
     <div class="colleft">
-      <center><img src="images/gallery/headerbg.jpg" id = "sidelogo" alt="logo" style="width:300px;">
+      <img src="images/backgrounds/headerbg.jpg" alt="logo" style="width:300px;">
     </div>
 
   </div>
@@ -255,7 +267,7 @@
       <img src="images/gallery/plant.jpg" id = "logo" alt="logo" style="width:300px;">
 
       <div class="col-md-3 mx-auto">
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">FETCH Reservations</h5>
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">FETCH a Reservation</h5>
         <ul class="list-unstyled">
           <li>
             Phone: 1-(800)-456-6789
@@ -287,7 +299,7 @@
       <hr class="clearfix w-100 d-md-none">
       <div class="col-md-3 mx-auto">
 
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">FETCH Address</h5>
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">FETCH The Address</h5>
 
         <ul class="list-unstyled">
           <li>
