@@ -1,3 +1,360 @@
+/*GOOGLE FONTS */
+  /*Corben*/
+  @import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap');
+  /*Poppins*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  /*Dancing Script*/
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+  /*Concert One*/
+  @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@700&display=swap');
+
+.navbar{
+  background-color: rgba(4, 4, 139, 0);
+  grid-area: navbar;
+  font-size: 1800px;
+  font-family: poppins;
+  font-weight: 600;
+  color:rgb(29, 0, 36);
+
+}
+.menu{
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-family: concert one;
+  transition: all 1s;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.menu:hover{
+  text-decoration: none;
+  border-bottom: 3px  solid;
+  border-radius: 1.5px 1.5px;
+  border-bottom-color: rgba(255, 255, 255, 0.582);
+  color:white;
+
+}
+.banner{
+  height: 100vh;
+  background-image: linear-gradient(to left top, #240224, #34093a, #451153, #541a6e, #61258c, #642793, #68289b, #6b2aa2, #682192, #631983, #5e1075, #580667);
+  display: grid;
+  grid-template-columns: .20fr .50fr .5fr .20fr;
+  grid-template-rows: .1fr .5fr .1fr;
+  grid-template-areas: 
+  "left-sidebar navbar navbar right-sidebar"
+  "left-sidebar banner-info banner-image right-sidebar"
+  "bottom-bar bottom-bar bottom-bar bottom-bar";
+}
+
+.banner-info{
+  grid-area: banner-info;
+  align-items: center;
+  text-align: justify;
+  padding:5px;
+  padding-top: 100px;
+  padding-right: 25px;
+}
+
+.banner-image{
+  grid-area: banner-image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  
+}
+
+ #burger{
+   width:400px;
+
+ }
+
+.banner h1{
+    font-family: Dancing Script;
+    vertical-align: middle;
+    font-size: 60px;
+    color:white;
+    font-weight:800;
+}
+.banner h2{
+  font-family: concert one;
+  color:orangered;
+  font-size: 36px;
+}
+
+.banner p{
+  font-family: 'Poppins';
+  color: #f6cffe;
+  font-size: 18px;
+  word-spacing: -2px;
+}
+
+.banner button{
+  background-color: rgb(29, 0, 36);
+  border-radius: 3px;
+  color:white;
+  font-family: 'Poppins';
+  font-size: 16px;
+  border:rgb(248, 236, 236);
+  padding:10px;
+  font-weight: 800;
+  box-shadow: 5px 5px 10px rgb(8, 3, 3);
+}
+
+.left-sidebar{
+  grid-area: left-sidebar;
+}
+
+.right-sidebar{
+  grid-area: right-sidebar;
+}
+
+
+
+#about{
+  background-color: yellowgreen;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:  .25fr 1fr 1fr .25fr ;
+  grid-template-rows: 1fr;
+  grid-template-areas: "left-sidebar slider about-info right-sidebar ";
+  padding:20px;
+  grid-gap: 10px;
+}
+
+#about-info{
+  grid-area: about-info;
+  padding: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  height:300px;
+  text-indent: 10px;
+  font-family: poppins;
+}
+
+#about h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: Dancing Script;
+}
+
+#about h2{
+  font-family: poppins;
+}
+
+#about p{
+  font-family: poppins;
+}
+
+#burger-menu{
+  background-color:white;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-areas: "burger-left-side burger-right-side";
+  grid-column-gap: 50px;
+}
+
+.burger-left-side{
+  grid-area: burger-left-side;
+  
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: .40fr .60fr;
+  grid-template-areas: "burger-pic burger-heading"
+                       "burger-pic burger-info";
+}
+
+.burger-right-side{
+  grid-area: burger-right-side;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: .40fr .60fr;
+  grid-template-areas: "burger-pic burger-heading"
+                       "burger-pic burger-info";
+}
+
+.burger-info{
+  grid-area: burger-info;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  font-family: poppins;
+}
+
+.burger-info p{
+  font-family: poppins;
+}
+
+.burger-heading{
+  grid-area: burger-heading;
+  font-family: concert one;
+  color:orangered;
+  font-size: 36px; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.burger-pic{
+  grid-area: burger-pic;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+#box1{
+  background-color: rgb(177, 202, 189);
+  grid-area: box1;
+ /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr ;
+  grid-template-areas: "icon1 icon2";
+  grid-gap: 10px;
+  padding: 5px; 
+  
+}*/
+
+#box2{
+  background-color: rgb(119, 129, 125);
+  grid-area: box2;
+}
+
+#box3{
+  background-color: grey;
+  grid-area: box3;
+}
+
+#icon1{
+  background-color: pink;
+  grid-area: icon1;
+}
+
+#icon2{
+  background-color: red;
+  grid-area: icon2;
+}
+
+.slider{
+  height: 468px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: .05fr 80fr .05fr;
+  grid-template-rows: .5fr;
+  grid-template-areas: "leftButton images rightButton";
+  grid-area: slider;
+  background-color: yellowgreen;
+  box-shadow: 2px 2px 20px green;
+  border-radius: 2px;
+}
+
+#left{
+  grid-area: leftButton;
+  background-color: rgba(255, 255, 255, 0.582);
+  font-family: poppins;
+  font-weight: 800;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-color: rgba(0, 128, 0, 0);
+  box-shadow:inset -.4em -0.8em 0 -0.35em rgba(0,0,0,0.17);
+}
+
+#right{
+  grid-area: rightButton;
+  background-color: rgba(255, 255, 255, 0.582);
+  font-family: poppins;
+  font-weight: 800;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-color: rgba(0, 128, 0, 0);
+  box-shadow:inset -.4em -0.8em 0 -0.35em rgba(0,0,0,0.17);
+}
+
+#images{
+  grid-area: images;
+  object-fit: contain;
+  width: 100%;
+}
+
+#burger-menu-pic{
+  width:175px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#box{
+  background-color: blueviolet;
+  color:black;
+  font-size: 50px;
+}
+
+
+
+.icons2{
+  color: yellow;
+}
+
+
+#menu{
+  background-color: #ca0000;
+}
+
+.box{
+  background-color: gray;
+}
+
+
 
 * {
   scroll-behavior: smooth;
@@ -50,7 +407,7 @@
   left: 0;
   overflow: hidden;
   background-color: black;
-  /*background-image: url('images/backgrounds/rustdoor.jpg'); */
+  /*background-image: url('images/backgrounds/rustdoor.jpg'); 
   padding-top: 20px;
   border-color: rgba(209, 211, 211, 0.918);
   box-shadow: 5px 1px 3.5px rgba(0, 0, 0, 0.651);
@@ -121,39 +478,14 @@
 
  header
 
-.navbar { 
-  width:90%;
-  background-image: linear-gradient(to right,  white,#e7e7e7);
-  box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.651);
-  font-size: 20px;
-  border-bottom: 1px;
-  border-left: 0px;
-  border-right: 0px;
-  border-style: outset;
-  border-color: rgba(180, 190, 188, 0.918);
-  margin: auto;
-  z-index: -1;
-}
-
-.menu{
-  color:black;
-  font-size: 15px;
-  font-family: cambria;
-  padding: 5px;
-
-}
 
 
 
-.title
-{
-  color: rgb(82, 59, 0);
-  font-size: 30px;
-  margin: auto;
-  text-align: center;
-  font-family: "Special Elite";
-}
 
+
+
+
+*/
 h1 {
   font-size: 20px;
   font-weight: bold;
@@ -171,7 +503,7 @@ h2 {
   color:rgb(114, 65, 0);
   font-weight: bold;
   font-family: "Special Elite";
-}
+} */
 
 #dinnerMenu {
   background-image: url('images/backgrounds/menubg.jpg');
@@ -196,7 +528,7 @@ h2 {
 
 
 
-#about {
+/*#about {
   padding:10px;
   margin:auto;
   background-attachment: fixed;
@@ -240,20 +572,30 @@ h2 {
    background-color: rgb(29, 27, 23);
 }
 
-/*copyright footer*/
+/*copyright footer
 .copyrights{
    color: rgb(163, 146, 105);
    font-family: "Special Elite";
    text-align: right;
 }
 
+*/
 
 
-
-@media screen and (max-height: 450px) 
+@media screen and (max-width: 600px) 
 {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .banner{
+    height: 100vh;
+    background-image: linear-gradient(to left top, #240224, #34093a, #451153, #541a6e, #61258c, #642793, #68289b, #6b2aa2, #682192, #631983, #5e1075, #580667);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr .5fr 0fr ;
+    grid-template-areas: 
+    "left-sidebar" "navbar" "right-sidebar"
+    "banner-info" "banner-image";
+    
+  }
+  
 }
 
 @media screen and (max-width: 450px) {
@@ -274,7 +616,7 @@ h2 {
 
 
 /* Key Frames */
-/*opens intro doors*/
+/*opens intro doors
 @keyframes openDoor
 {
   from
@@ -296,7 +638,7 @@ h2 {
   }
 }
 
-/*spin*/
+/*spin
 @-webkit-keyframes spin
 {
   100%
@@ -345,3 +687,7 @@ h2 {
   animation: vanish 1s forwards;
 
 }*/
+
+@media only screen and (max-width: 700px) {
+
+}
