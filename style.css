@@ -279,7 +279,7 @@
   grid-template-areas: "leftButton images rightButton";
   grid-area: slider;
   background-color: yellowgreen;
-  box-shadow: 2px 2px 20px green;
+  /*box-shadow: 2px 2px 20px green;*/
   border-radius: 2px;
 }
 
@@ -582,10 +582,10 @@ h2 {
 */
 
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 700px) 
 {
   .banner{
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(to left top, #240224, #34093a, #451153, #541a6e, #61258c, #642793, #68289b, #6b2aa2, #682192, #631983, #5e1075, #580667);
     display: grid;
     grid-template-columns: 1fr;
@@ -593,8 +593,83 @@ h2 {
     grid-template-areas: 
     "left-sidebar" "navbar" "right-sidebar"
     "banner-info" "banner-image";
+  }
+
+  .burger-left-side{
+    grid-area: burger-left-side;
+   
+    display: grid;
+    grid-template-rows: .25fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "burger-heading"
+                         "burger-pic" 
+                         "burger-info";
+  }
+  
+  .burger-right-side{
+    grid-area: burger-right-side;
+    
+    display: grid;
+    grid-template-rows: .25fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "burger-heading"
+                         "burger-pic" 
+                         "burger-info";
+  }
+
+  #burger-menu{
+    background-color:white;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: "burger-left-side burger-right-side";
     
   }
+
+  .burger-heading{
+    grid-area: burger-heading;
+    font-family: concert one;
+    color:orangered;
+    font-size: 30px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    
+  }
+
+  .burger-info{
+    grid-area: burger-info;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-family: poppins;
+    background-color: white;
+  }
+  
+  .burger-pic{
+    grid-area: burger-pic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+
+  #about{
+    background-color: yellowgreen;
+    height: auto;
+    display: grid;
+    grid-template-columns:  1fr ;
+    grid-template-rows: .0fr 1fr 1fr .0fr;
+    grid-template-areas: "left-sidebar" 
+                         "slider"
+                         "about-info"
+                         "right-sidebar" ;
+    padding:20px;
+  }
+
+
   
 }
 
@@ -671,23 +746,4 @@ h2 {
 
 
 
-/*loader{
-  position: fixed;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background: rgb(198, 37, 37);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
 
-.disappear{
-  animation: vanish 1s forwards;
-
-}*/
-
-@media only screen and (max-width: 700px) {
-
-}
