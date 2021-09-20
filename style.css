@@ -122,7 +122,6 @@
   padding:50px;
   justify-content: center;
   align-items: center;
-
 }
 
 .burger-special-image{
@@ -140,7 +139,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.603);
-  box-shadow: 0px 0px 40px white;
+  box-shadow: -7px 0px 40px white;
 }
 
 #burger-special h1{
@@ -184,7 +183,7 @@
 }
 
 #new-menu-items{
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(255, 255, 255);
   display: inline-flex;
   padding: 5px;
 }
@@ -202,6 +201,9 @@
   padding-right: 30px;
   font-family: poppins;
 }
+#new-menu-items button:hover{
+  background-color: rgba(255, 68, 0, 0.445);
+}
 
 .new-menu-items-leftSide{
   
@@ -212,7 +214,12 @@
   color:rgb(168, 165, 165);
   background-size: cover;
   background-repeat: no-repeat;
-  
+  box-shadow: 0px 3px 15px black;
+}
+
+.new-menu-items-leftSide:hover{
+   transition: all 2s;
+   width: 70%;
 }
 
 .new-menu-items-leftSide h1{
@@ -281,19 +288,17 @@
 }
 
 #burger-menu{
-  background-color:rgb(65, 181, 235);
+  
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr ;
   grid-template-areas: "burger-left-side burger-middle-side burger-right-side";
-  
 }
 
 .burger-left-side{
   grid-area: burger-left-side;
-  
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr .25fr .5fr;
   grid-template-columns:  1fr;
   grid-template-areas: "burger-pic"
                        "burger-heading"
@@ -303,23 +308,25 @@
 .burger-right-side{
   grid-area: burger-right-side;
   display: grid;
-  background-color: aqua;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr .25fr .5fr;
   grid-template-columns:  1fr;
   grid-template-areas: "burger-pic"
                        "burger-heading"
                        "burger-info";
+
+  
 
 }
 
 .burger-middle-side{
   grid-area: burger-middle-side;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr .25fr .5fr;
   grid-template-columns:  1fr;
   grid-template-areas: "burger-pic"
                        "burger-heading"
                        "burger-info";
+  
 }
 
 .burger-info{
@@ -327,18 +334,17 @@
   text-align: center;
   color: black;
   padding: 10px;
-  
   font-family: poppins;
 }
 
 .burger-info p{
   font-family: poppins;
-  background-color: aqua;
+  
 }
 
 .burger-heading{
   grid-area: burger-heading;
-  font-family: concert one;
+  font-family: Special Elite;
   color:orangered;
   font-size: 36px; 
   text-align: center;
@@ -346,7 +352,7 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  background-color: #992baf;
+  
 }
 
 .burger-pic{
@@ -358,54 +364,111 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#box2{
-  background-color: rgb(119, 129, 125);
-  grid-area: box2;
+#food-list {
+  font-family: poppins;
+  text-align: center;
+  padding-top: 20px;
+  color:rgb(48, 48, 48);
 }
 
-#box3{
-  background-color: grey;
-  grid-area: box3;
+#food-list p span{
+  font-family: poppins;
+  color:white;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color:  orangered;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  text-align: justify;
+  border-radius: 3px;
 }
 
-#icon1{
-  background-color: pink;
-  grid-area: icon1;
+#food-list h1{
+  font-family: special elite;
+  text-align: center;
+  font-weight: 800;
+  font-size: 45px;
 }
 
-#icon2{
-  background-color: red;
-  grid-area: icon2;
+#food-list p{
+  font-family: poppins;
+  text-align: center;
+  height: 50px;
+  
 }
+
+#food-list-items{
+ 
+  display:  inline-flex;
+}
+
+#food-list-items h3{
+  font-family: special elite;
+  height: 40px;
+  color:black;
+  font-weight: 800;
+  
+}
+.food-list-item{
+  
+  margin: 10px;
+  
+}
+
+.food-list-item button{
+  color:orangered;
+  text-transform: uppercase;
+  padding:10px;
+  border-color: orangered;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: poppins;
+}
+
+.food-list-item button:hover{
+  background-color: rgb(136, 255, 0);
+
+}
+
+.food-list-item img{
+  
+  margin: 10px;
+  height: 200px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .slider{
   height: 468px;
@@ -449,7 +512,7 @@
 }
 
 #burger-menu-pic{
-  width:175px;
+  width:275px;
 }
 
 
@@ -483,39 +546,6 @@
   box-sizing: border-box;
 }
 
-.vault {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0; 
-  left: 0;
-  background-color: rgb(153, 148, 148);
-  background-image: url('images/backgrounds/rustdoor.jpg');
-  background-position: center;
-  margin-left: 250px;
-  -webkit-animation:openDoor 3s linear ;
-  -moz-animation:  openDoor 3s linear ;
-  animation: openDoor 3s linear;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
-}
-
-#preloader{
-  background-color: grey;
-  width:100%;
-  height:100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#noodle{
-  position: absolute;
-  animation: bounce 1.5s linear alternate,bounceforward 10s ease-in-out;
-  animation-iteration-count: 5,5;
-  
-}
 
 
 
@@ -546,71 +576,11 @@ h2 {
   font-family: "Special Elite";
 } */
 
-#dinnerMenu {
-  background-image: url('images/backgrounds/menubg.jpg');
-  padding:10px;
-  border: 20px;
-  border-color:black;
-  box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.651);
-  background-attachment: fixed;
-}
-
-#gallery {
-  padding: 10px;
-  background: 
-    linear-gradient(
-      rgba(209, 200, 200, 0.906), 
-      rgba(255, 255, 255, 0.45)
-    ), url('images/backgrounds/rest.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-}
-
-
-
-/*#about {
-  padding:10px;
-  margin:auto;
-  background-attachment: fixed;
-  align-content: center;
-}
-
-#about .colleft{
-
-  color:rgb(255, 255, 255);
-  padding: 10px;
-  align-content: center;
-  text-align: center;
-  width: 45%;
-  margin:auto;
-  
-}
-
-#about .colright {
-  color:rgb(0, 0, 0);
-  padding: 10px;
-  align-content: center;
-  text-align: center;
-  width: 55%;
-  margin: auto;
-}
-
-
-#footermenu {
-  background-color: white;
-  background-attachment: fixed;
-  font-family: "Special Elite";
-  color: rgb(101, 101, 101);
-  margin:auto;
-  background: cover;
-  align-content: center;
-}
 
 
 
 
-*/
+
 
 
 @media screen and (max-width: 950px) 
@@ -626,57 +596,82 @@ h2 {
     "banner-info" "banner-image";
   }
 
+  #burger-menu{
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "burger-menu-title burger-menu-title burger-menu-title"
+                         "burger-left-side burger-middle-side burger-right-side"
+    
+  }
+
+  .burger-menu-title{
+    grid-area: burger-menu-title;
+   background-color: blue;
+    
+  }
+
   .burger-left-side{
     grid-area: burger-left-side;
-   
     display: grid;
-    grid-template-rows: .25fr 1fr 1fr;
+    grid-template-rows: 1fr .6fr .3fr ;
     grid-template-columns: 1fr;
-    grid-template-areas: "burger-heading"
+    grid-template-areas: 
                          "burger-pic" 
+                         "burger-heading"
                          "burger-info";
+      
+  }
+
+  .burger-middle-side{
+    grid-area: burger-middle-side;
+    display: grid;
+    grid-template-rows: 1fr .6fr .3fr ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                         "burger-pic" 
+                         "burger-heading"
+                         "burger-info";
+                        
   }
   
   .burger-right-side{
     grid-area: burger-right-side;
-    
     display: grid;
-    grid-template-rows: .25fr 1fr 1fr;
+    grid-template-rows: 1fr .6fr .3fr ;
     grid-template-columns: 1fr;
-    grid-template-areas: "burger-heading"
+    grid-template-areas: 
                          "burger-pic" 
+                         "burger-heading"
                          "burger-info";
+                         
   }
 
-  #burger-menu{
-    background-color:white;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-areas: "burger-left-side burger-right-side";
-    
+  #burger-menu-pic{
+    width: 180px;
   }
 
   .burger-heading{
     grid-area: burger-heading;
-    font-family: concert one;
-    color:orangered;
-    font-size: 30px; 
+    font-family: special elite;
+    color:black;
+    font-size: 20px; 
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    
+    font-weight: 800;
+    height: 55px;
   }
 
   .burger-info{
     grid-area: burger-info;
     text-align: center;
-    color: black;
-    padding: 10px;
+    color: rgb(77, 77, 77);
     font-family: poppins;
-    background-color: white;
+    height: 100px; 
   }
   
   .burger-pic{
@@ -684,7 +679,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    height: 120px;
   }
 
   #about{
@@ -700,8 +695,14 @@ h2 {
     padding:20px;
   }
 
-
-  
+  #burger-special{
+    display: inline-flex;
+    padding:50px;
+    justify-content: center;
+    align-items: center;
+    
+    width:100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
