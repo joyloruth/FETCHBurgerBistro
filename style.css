@@ -38,7 +38,9 @@
 }
 .banner{
   height: 100vh;
-  background-image: linear-gradient(to left top, #240224, #34093a, #451153, #541a6e, #61258c, #642793, #68289b, #6b2aa2, #682192, #631983, #5e1075, #580667);
+  background-image: linear-gradient(#444243a8, rgba(255, 68, 0, 0.61)), url("/images/backgrounds/burgerBanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: .20fr .50fr .5fr .20fr;
   grid-template-rows: .1fr .5fr .1fr;
@@ -46,6 +48,7 @@
   "left-sidebar navbar navbar right-sidebar"
   "left-sidebar banner-info banner-image right-sidebar"
   "bottom-bar bottom-bar bottom-bar bottom-bar";
+  background-attachment: fixed;
 }
 
 .banner-info{
@@ -92,7 +95,7 @@
 }
 
 .banner button{
-  background-color: rgb(29, 0, 36);
+  background-color: rgb(255, 83, 4);
   border-radius: 3px;
   color:white;
   font-family: 'Poppins';
@@ -100,7 +103,8 @@
   border:rgb(248, 236, 236);
   padding:10px;
   font-weight: 800;
-  box-shadow: 5px 5px 10px rgb(8, 3, 3);
+  text-transform: uppercase;
+  box-shadow: 5px 5px 10px rgb(54, 6, 6);
 }
 
 .left-sidebar{
@@ -109,6 +113,134 @@
 
 .right-sidebar{
   grid-area: right-sidebar;
+}
+
+/*Burger Special*/
+
+#burger-special{
+  display: inline-flex;
+  padding:50px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.burger-special-image{
+  
+  width: 50%;
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-special-info{
+  
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.603);
+  box-shadow: 0px 0px 40px white;
+}
+
+#burger-special h1{
+  font-size: 40px;
+  font-family: "Special Elite";
+}
+
+.burger-special-info p{
+  font-family: poppins;
+  color: rgb(51, 50, 50);
+}
+
+.burger-special-info p span{
+  
+  font-family: poppins;
+  color:white;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color:  orangered;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  text-align: justify;
+  border-radius: 3px;
+}
+
+.burger-special-info button{
+  color:orangered;
+  text-transform: uppercase;
+  padding:10px;
+  border-color: orangered;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: poppins;
+}
+
+#new-menu-items{
+  background-color: rgb(233, 233, 233);
+  display: inline-flex;
+  padding: 5px;
+}
+
+#new-menu-items button{
+  color:rgb(243, 239, 237);
+  text-transform: uppercase;
+  padding:10px;
+  border-color:  rgb(253, 252, 251);
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: poppins;
+}
+
+.new-menu-items-leftSide{
+  
+  padding:25px;
+  margin-right: 5px;
+  font-family: poppins;
+  width:50%;
+  color:rgb(168, 165, 165);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.new-menu-items-leftSide h1{
+  color:rgb(255, 255, 255);
+  font-family: special elite;
+  font-weight: 800;
+}
+
+.new-menu-items-leftSide p span{
+  
+  font-family: poppins;
+  color:white;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color:  orangered;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  text-align: justify;
+  border-radius: 3px;
+}
+
+.new-menu-items-leftSide h3{
+  color:rgb(255, 255, 255);
+  font-family: special elite;
+  font-weight: 800;
 }
 
 
@@ -149,31 +281,45 @@
 }
 
 #burger-menu{
-  background-color:white;
+  background-color:rgb(65, 181, 235);
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-areas: "burger-left-side burger-right-side";
-  grid-column-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-areas: "burger-left-side burger-middle-side burger-right-side";
+  
 }
 
 .burger-left-side{
   grid-area: burger-left-side;
   
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: .40fr .60fr;
-  grid-template-areas: "burger-pic burger-heading"
-                       "burger-pic burger-info";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns:  1fr;
+  grid-template-areas: "burger-pic"
+                       "burger-heading"
+                       "burger-info";
 }
 
 .burger-right-side{
   grid-area: burger-right-side;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: .40fr .60fr;
-  grid-template-areas: "burger-pic burger-heading"
-                       "burger-pic burger-info";
+  background-color: aqua;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns:  1fr;
+  grid-template-areas: "burger-pic"
+                       "burger-heading"
+                       "burger-info";
+
+}
+
+.burger-middle-side{
+  grid-area: burger-middle-side;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns:  1fr;
+  grid-template-areas: "burger-pic"
+                       "burger-heading"
+                       "burger-info";
 }
 
 .burger-info{
@@ -181,11 +327,13 @@
   text-align: center;
   color: black;
   padding: 10px;
+  
   font-family: poppins;
 }
 
 .burger-info p{
   font-family: poppins;
+  background-color: aqua;
 }
 
 .burger-heading{
@@ -198,6 +346,7 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  background-color: #992baf;
 }
 
 .burger-pic{
@@ -236,19 +385,7 @@
 
 
 
-/*
 
-#box1{
-  background-color: rgb(177, 202, 189);
-  grid-area: box1;
- /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr ;
-  grid-template-areas: "icon1 icon2";
-  grid-gap: 10px;
-  padding: 5px; 
-  
-}*/
 
 #box2{
   background-color: rgb(119, 129, 125);
@@ -333,26 +470,10 @@
 
 
 
-/*#box{
-  background-color: blueviolet;
-  color:black;
-  font-size: 50px;
-}
+/*
 
 
 
-.icons2{
-  color: yellow;
-}
-
-
-#menu{
-  background-color: #ca0000;
-}
-
-.box{
-  background-color: gray;
-}
 
 
 
@@ -398,87 +519,6 @@
 
 
 
-.sidenav {
-  height: 100%;
-  width: 250px; 
-  position: fixed;
-  z-index: 1;
-  top: 0; 
-  left: 0;
-  overflow: hidden;
-  background-color: black;
-  /*background-image: url('images/backgrounds/rustdoor.jpg'); 
-  padding-top: 20px;
-  border-color: rgba(209, 211, 211, 0.918);
-  box-shadow: 5px 1px 3.5px rgba(0, 0, 0, 0.651);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sidenav a{
-  padding: 15px 8px 6px 20px;
-  text-decoration: none;
-  font-size: 15px;
-  color: rgb(255, 248, 232);
-  display: block;
-  font-family: "Special Elite";
-  transition: 3s  all;
-  box-shadow: 5px 1px 3.5px rgba(0, 0, 0, 0.651);
-  border: 5px;
-  
-  width:100%;
-  height: 50px;
-}
-
-.sidenav a:hover{
-  padding: 15px 8px 6px 2px;
-  text-decoration: none;
-  font-size: 16px;
-  color: rgb(255, 206, 83);
-  display: block;
-  overflow: hidden;
-  transform: translate(30%);
-  box-shadow: 5px 1px 3.5px rgba(0, 0, 0, 0.651);
-}
-
-#sidelogo{
-  
-  border-radius: 300px;
-  height:auto;
-  animation-delay: 30s;
-  -webkit-animation: spin 1s linear 3;
-  -moz-animation:  spin 1s linear 3;
-  animation: spin 1s linear 3;
-  
-}
-
-#sidelogo:hover{
-
-  background-color: rgb(80, 80, 80); 
-  
-}
-
-
-#main {
- margin-left: 250px;
-}
-
-.header {
-  padding-top: 10px;
-  position: relative;
-  background-image: url('images/backgrounds/sushibanner.jpg');
-  padding-bottom: 300px;
-  align-content: middle;
-  background-size:cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-}
-
- header
-
-
 
 
 
@@ -486,10 +526,11 @@
 
 
 */
+/*
 h1 {
   font-size: 20px;
   font-weight: bold;
-  font-family: "Special Elite";
+  
 }
 
 p {
@@ -567,17 +608,7 @@ h2 {
 }
 
 
-#copyright {
-   padding:10px;
-   background-color: rgb(29, 27, 23);
-}
 
-/*copyright footer
-.copyrights{
-   color: rgb(163, 146, 105);
-   font-family: "Special Elite";
-   text-align: right;
-}
 
 */
 
@@ -586,7 +617,7 @@ h2 {
 {
   .banner{
     height: auto;
-    background-image: linear-gradient(to left top, #240224, #34093a, #451153, #541a6e, #61258c, #642793, #68289b, #6b2aa2, #682192, #631983, #5e1075, #580667);
+    background-image: linear-gradient(#444243a8, #91211dc2), url("/images/backgrounds/burgerBanner.jpg");
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0fr .5fr 0fr ;

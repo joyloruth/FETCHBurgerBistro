@@ -40,12 +40,15 @@
         </button>
         <div class="collapse navbar-collapse nav" id="navbarNav">
           <img src = "images/logos/burger.png" width="80px">
-         Vegan Burger Hut
+         
           <ul class="navbar-nav ml-auto">
            
-            <a class = "menu" href="#about">       01.<span style="color: #A8EB12;"> About</span></a>
-            <a class = "menu" href="#burger-menu"> 02.<span style="color: #A8EB12;"> Burgers</span></a>    
-            <a class = "menu" href="#burger-menu"> 03.<span style="color: #A8EB12;"> Sides</span></a>    
+            
+            <a class = "menu" href="#burger-menu"> 01.<span style="color: #A8EB12;"> Burgers</span></a>    
+            <a class = "menu" href="#burger-menu"> 02.<span style="color: #A8EB12;"> Sides</span></a> 
+            <a class = "menu" href="#about">       03.<span style="color: #A8EB12;"> About</span></a>
+            <a class = "menu" href="#about">       04.<span style="color: #A8EB12;"> Contact</span></a>
+
           </ul>
         </div>
       </nav>
@@ -54,17 +57,86 @@
       <h1>Super Delicious</h1>
       <h2><span style="color: #A8EB12;">Vegan</span> Burger </h2>
       <p>Plant based burger patty loaded with vegan bacon, vegan blue cheese crumbles, crunchy fried onions and steak sauce.</p>
-      <button>Learn More</button>
+      <button id = "bannerButton">Our Menu</button>
     </div>
     <div class = "banner-image">
-      <img src = "burger.png" id = "burger">
+      <img src = "" id = "burger">
     </div>
     <div class="left-sidebar">
     </div>
     <div class="right-sidebar">
     </div>
   </div>
+
+  <div id="burger-special">
+    <div class="burger-special-image">
+      <img src = "burger-menu/bluecheeseburger.png" id = "burger">
+    </div>
     
+
+<!--BURGER MENU SPECIALS-->   
+    <div class="burger-special-info">
+      <p id = "price-tag"><span> only $4.99</span> </p>
+      <h1>Black Bean Burger</h1>
+      <p>We can't think of a better way to save the plant than a vegan burger.
+        You can hardly tell the difference. 
+      </p>
+      <button>Order now</button>
+    </div>
+  </div>
+
+
+
+<!--NEW MENU ITEMS-->
+  <div id="new-menu-items">
+    <div class="new-menu-items-leftSide" style="background-image: linear-gradient(black, rgba(0, 0, 0, 0.479)),url(images/backgrounds/truffleburger.jpg)">
+      <p id = "price-tag"><span> new</span> </p>
+      <h1>Truffle Burger</h1>
+      <p>Bonjour can't think of a better way to save the plant than a vegan burger.
+        You can hardly tell the difference. 
+      </p>
+      <h3>$3.49</h3>
+      <button>Order now</button>
+    </div>
+    <div class="new-menu-items-leftSide" style="background-image: linear-gradient(black, rgba(0, 0, 0, 0.479)),url(images/backgrounds/burgerBanner.jpg)" >
+      <p id = "price-tag"><span> new</span> </p>
+      <h1>Black Bean Burger</h1>
+      <p>We can't think of a better way to save the plant than a vegan burger.
+        Pickle onions tomatoes and A1 sauce
+      </p>
+      <h3>$6.49</h3>
+      <button>Order now</button>
+    </div>
+  </div>
+  <div id="new-menu-items">
+    <div class="new-menu-items-leftSide" style="background-image: linear-gradient(black, rgba(0, 0, 0, 0.479)),url(images/backgrounds/milkshake.jpg)">
+      <p id = "price-tag"><span> new</span> </p>
+      <h1>Peach Milkshake</h1>
+      <p>Creamy fruity milkshake, that pairs well with our signature burgers. 
+        Include chunks of 100% real fruit with a vanilla base. 
+      </p>
+      <h3>$4.49</h3>
+      <button>Order now</button>
+    </div>
+    <div class="new-menu-items-leftSide" style="background-image: linear-gradient(black, rgba(0, 0, 0, 0.479)),url(images/backgrounds/fries.jpg)" >
+      <p id = "price-tag"><span> new</span> </p>
+      <h1>Parmesan Fries</h1>
+      <p>Crispy golden fries topped with parmesan cheese and garlic salt. lncludes sweet heat ketchup  and garlic aoli for dipping.
+      </p>
+      <h3>$4.49</h3>
+      <button>Order now</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  
+ <!-- ABOUT US-->   
   <div id = "about">
     <div class="slider">
       <img name= 'slide' id = "images"/>
@@ -95,6 +167,7 @@
     
     </div>
 
+    <!--Burger Menu-->
     <div id="burger-menu">
       <div class="burger-left-side">
         <div class="burger-pic">
@@ -107,6 +180,21 @@
           <p>Plant-based burger patty loaded with vegan bacon, vegan cheese, carmalized onions and sauteed mushrooms</p>
         </div>
       </div>
+
+      <div class="burger-middle-side">
+        <div class="burger-pic">
+          <img src = "burger-menu/classicburger.png" id ="burger-menu-pic" >
+        </div>
+        <div class="burger-heading">
+          Mushroom burger
+        </div>
+        <div class="burger-info">
+          <p>Plant-based burger patty loaded with vegan bacon, vegan cheese, carmalized onions and sauteed mushrooms</p>
+        </div>
+      </div>
+
+      
+
       <div class="burger-right-side">
         <div class="burger-pic">
            <img src = "burger-menu/burger.png" id ="burger-menu-pic" >
@@ -119,6 +207,8 @@
         </div>
       </div>
     </div>
+
+    <!---
     <div id="burger-menu">
       <div class="burger-left-side">
         <div class="burger-pic">
@@ -142,13 +232,24 @@
            <p>Plant-based burger patty loaded with vegan bacon, vegan american cheese, fresh tomato, pickles, ketchup, mustard and zesty mayo</p>
         </div>
       </div>
+      <div class="burger-middle-side">
+        <div class="burger-pic">
+          <img src = "burger-menu/baconburger.png" id ="burger-menu-pic" >
+        </div>
+        <div class="burger-heading">
+          Bacon burger
+        </div>
+        <div class="burger-info">
+           <p>Plant-based burger patty loaded with vegan bacon, vegan american cheese, fresh tomato, pickles, ketchup, mustard and zesty mayo</p>
+        </div>
+      </div>
     </div>
     
   <div id="burger-menu">
-    <!--<div class="left-sidebar">
+    <div class="left-sidebar">
     </div>
     <div class="right-sidebar">
-    </div> -->
+    </div> 
       <div class="burger-left-side">
         <div class="burger-pic">
           <img src = "burger-menu/bluecheeseburger.png" id ="burger-menu-pic" >
@@ -172,7 +273,18 @@
            <p>Plant-based burger patty loaded with vegan bacon, vegan american cheese, fresh tomato, pickles, sweet barbeque sauce, mustard and zesty mayo</p>
         </div>
      </div>
-  </div>
+     <div class="burger-middle-side">
+      <div class="burger-pic">
+        <img src = "burger-menu/classicburger.png" id ="burger-menu-pic" >
+      </div>
+      <div class="burger-heading">
+        Barbeque burger
+      </div>
+      <div class="burger-info">
+         <p>Plant-based burger patty loaded with vegan bacon, vegan american cheese, fresh tomato, pickles, sweet barbeque sauce, mustard and zesty mayo</p>
+      </div>
+   </div>
+  </div> -->
   
       <!--******** SIDE NAVIGATION ********************
     <div class = "vault">
@@ -230,6 +342,8 @@
           </div>
           </div>
       </div>
+
+      
         
       
 
