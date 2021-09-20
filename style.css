@@ -8,6 +8,10 @@
   /*Concert One*/
   @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@700&display=swap');
 
+ *{
+   scroll-behavior: smooth;
+ }
+  
 .navbar{
   background-color: rgba(4, 4, 139, 0);
   grid-area: navbar;
@@ -36,7 +40,7 @@
 
 .banner{
   height: 100vh;
-  background-image: linear-gradient(#292828a8, #160606a2), url("/images/backgrounds/burgerBanner.jpg");
+  /*background-image: linear-gradient(#292828a8, #160606a2), url("/images/backgrounds/burgerBanner.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -56,7 +60,6 @@
   padding:5px;
   padding-top: 100px;
   padding-right: 25px;
-
 }
 
 .banner-image{
@@ -70,7 +73,6 @@
 
  #burger{
    width:400px;
-
  }
 
 .banner h1{
@@ -482,14 +484,14 @@
 
 
 .slider{
-  height: 468px;
+  height: 400px;
   overflow: hidden;
   display: grid;
   grid-template-columns: .05fr 80fr .05fr;
   grid-template-rows: .5fr;
   grid-template-areas: "leftButton images rightButton";
   grid-area: slider;
-  background-color: yellowgreen;
+  
   /*box-shadow: 2px 2px 20px green;*/
   border-radius: 2px;
 }
@@ -590,6 +592,7 @@ h1 {
     height: auto;
     background-image: linear-gradient(#444243a8, #91211dc2), url("/images/backgrounds/burgerBanner.jpg");
     display: grid;
+    padding: 15px;
     grid-template-columns: 1fr;
     grid-template-rows: 0fr .5fr 0fr ;
     grid-template-areas: 

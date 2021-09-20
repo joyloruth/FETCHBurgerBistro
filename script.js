@@ -1,7 +1,7 @@
 var images = [
-  "burger-slides/burgerslide1.jpeg",
-  "burger-slides/burgerslide2.jpg",
-  "burger-slides/burgerslide3.jpg",
+  "burger-menu/baconburger.png",
+  "burger-menu/bluecheeseburger.png",
+  "burger-menu/chickenburger.png",
 ]
 var i = 0;
 var time = 3500;
