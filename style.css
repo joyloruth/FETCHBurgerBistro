@@ -18,27 +18,25 @@
 
 }
 .menu{
-  color: rgb(255, 255, 255);
+  color: orangered;
   padding: 5px;
   text-align: center;
   font-size: 20px;
-  font-family: concert one;
+  font-family: special elite;
   transition: all 1s;
   font-weight: 800;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .menu:hover{
-  text-decoration: none;
-  border-bottom: 3px  solid;
-  border-radius: 1.5px 1.5px;
-  border-bottom-color: rgba(255, 255, 255, 0.582);
   color:white;
-
+  transition: all .5s ease-in-out; 
+  text-decoration: none;
 }
+
 .banner{
   height: 100vh;
-  background-image: linear-gradient(#444243a8, rgba(255, 68, 0, 0.61)), url("/images/backgrounds/burgerBanner.jpg");
+  background-image: linear-gradient(#292828a8, #160606a2), url("/images/backgrounds/burgerBanner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -58,6 +56,7 @@
   padding:5px;
   padding-top: 100px;
   padding-right: 25px;
+
 }
 
 .banner-image{
@@ -75,37 +74,45 @@
  }
 
 .banner h1{
-    font-family: Dancing Script;
+    font-family: POPPINS;
     vertical-align: middle;
     font-size: 60px;
     color:white;
     font-weight:800;
 }
 .banner h2{
-  font-family: concert one;
+  font-family: Special Elite;
   color:orangered;
   font-size: 36px;
 }
 
 .banner p{
   font-family: 'Poppins';
-  color: #f6cffe;
+  color: white;
   font-size: 18px;
   word-spacing: -2px;
 }
 
 .banner button{
-  background-color: rgb(255, 83, 4);
-  border-radius: 3px;
-  color:white;
-  font-family: 'Poppins';
-  font-size: 16px;
-  border:rgb(248, 236, 236);
-  padding:10px;
-  font-weight: 800;
+  color:orangered;
   text-transform: uppercase;
-  box-shadow: 5px 5px 10px rgb(54, 6, 6);
+  padding:10px;
+  border-color: orangered;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: poppins;
 }
+
+.banner button:hover{
+  background-color: orangered;
+  color:white;
+  transition: all .5s ease-in-out;
+}
+
 
 .left-sidebar{
   grid-area: left-sidebar;
@@ -180,6 +187,12 @@
   padding-left: 30px;
   padding-right: 30px;
   font-family: poppins;
+}
+
+.burger-special-info button:hover{
+  background-color: orangered;
+  color:white;
+  transition: all .5s ease-in-out;
 }
 
 #new-menu-items{
@@ -397,11 +410,9 @@
   font-family: poppins;
   text-align: center;
   height: 50px;
-  
 }
 
 #food-list-items{
- 
   display:  inline-flex;
 }
 
@@ -413,9 +424,7 @@
   
 }
 .food-list-item{
-  
   margin: 10px;
-  
 }
 
 .food-list-item button{
@@ -433,7 +442,9 @@
 }
 
 .food-list-item button:hover{
-  background-color: rgb(136, 255, 0);
+  background-color: orangered;
+  color:white;
+  transition: all .5s ease-in-out;
 
 }
 
@@ -563,17 +574,7 @@ h1 {
   
 }
 
-p {
-  font-size: 15px;
-  color: black;
-  font-family: "Times Roman";
-}
 
-h2 {
-  font-size:14px;
-  color:rgb(114, 65, 0);
-  font-weight: bold;
-  font-family: "Special Elite";
 } */
 
 
