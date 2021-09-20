@@ -469,13 +469,10 @@
   width:100%;
   justify-content: center;
   padding:20px;
-
 }
 
 .side-item{
-  margin: 50px;
-
-  
+  margin: 50px; 
 }
 
 .side-item h3{
@@ -483,11 +480,8 @@
   font-family: special elite;
 }
 
-
 #side-item-img{
-  
   width: 80px;
-  
 }
 
 #side-items-section{
@@ -566,17 +560,20 @@
   grid-template-rows: .5fr;
   grid-template-areas: "leftButton images rightButton";
   grid-area: slider;
-  
-  /*box-shadow: 2px 2px 20px green;*/
   border-radius: 2px;
 }
 
-
-
-
+#side-item-img:hover{
+  -webkit-animation: spin 1s ease-in-out;
+     -moz-animation: spin 1s ease-in-out;
+       -o-animation: spin 1s ease-in-out;
+          animation: spin 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
 
 #burger-menu-pic{
-  width:275px;
+  width: 100px;
+  height: 100px;
 }
 
 
@@ -594,40 +591,6 @@
 
 
 
-
-
-/*
-
-
-
-
-
-
-* {
-  scroll-behavior: smooth;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-
-
-
-
-
-
-
-
-
-*/
-/*
-h1 {
-  font-size: 20px;
-  font-weight: bold;
-  
-}
-
-
-} */
 
 
 
@@ -666,15 +629,9 @@ h1 {
     
   }
 
-  
-
-  
-  
- 
-
   #burger-menu-pic{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;  
   }
 
   .burger-heading{
@@ -691,21 +648,7 @@ h1 {
     height: 55px;
   }
 
-  .burger-info{
-    grid-area: burger-info;
-    text-align: center;
-    color: rgb(77, 77, 77);
-    font-family: poppins;
-    height: 100px; 
-  }
   
-  .burger-pic{
-    grid-area: burger-pic;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-  }
 
   #about{
     background-color: yellowgreen;
@@ -729,7 +672,7 @@ h1 {
   }
 
   .food-list-item{
-    margin: 0px;
+    margin: 15px;
   }
 
   #side-items{
@@ -747,11 +690,17 @@ h1 {
     width: 90px;
   }
 
+  #side-item-img:hover{
+    -webkit-animation: spin 1s linear;
+       -moz-animation: spin 1s linear;
+         -o-animation: spin 1s linear;
+            animation: spin 1s linear;
+  } 
+
   #side-items h3{
     font-size: 20px;
     font-weight: 800;
   }
-  
 }
 
 @media screen and (max-width: 450px) {
@@ -770,7 +719,10 @@ h1 {
     to{display: flex;}
 }
 
-
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+  
+}
 
 
 
