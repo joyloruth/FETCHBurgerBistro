@@ -8,6 +8,133 @@
   /*Concert One*/
   @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@700&display=swap');
 
+ 
+  
+  #preloader{
+    width:100%;
+    height:100vh;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-size: cover;
+    animation:   fadeOutBackground 1s ease, make_invisible 1s ease-out;
+    animation-delay: 11s, 12s;
+    animation-fill-mode: forwards, forwards;
+    overflow: hidden;
+    top: 0;
+    z-index: 10000;
+    flex-direction: column;
+    color:orangered;
+    
+  }
+  #preloader-images{
+    margin-bottom: 20px;
+  }
+  #preloader-title h1{
+    animation: font-small 1s ease-out;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    font-family: concert one;
+    font-size: 40px;
+  }
+
+  
+  
+  #preloader-burger{
+    animation: moveUp 1s ease-in-out alternate infinite, grow 3s ease-in-out alternate-reverse infinite, make_invisible 1s ease-out;
+    animation-delay: 0s, 0s, 8s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-in-out;
+  }
+  #preloader-milkshake{
+    animation: moveUp 1s ease-in-out alternate infinite, grow 3s ease-in-out alternate-reverse infinite, make_invisible 1s ease-out ;
+    animation-delay: .5s, 0s, 9s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-in-out;
+  
+  }
+  #preloader-fries{
+    animation: opacity 1s ease, moveUp 1s ease-in-out alternate infinite, grow 1s ease-in-out alternate-reverse infinite, make_invisible 1s ease-out ;
+    animation-delay: 0s,1s,0s, 10s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-in-out;
+  }
+  
+  @keyframes opacity
+  {
+    from { opacity: 0%;}
+      to { opacity: 100%;}
+  }
+  
+  @keyframes end
+  {
+    from { visibility: hidden;}
+      to { visibility: visible;}
+  }
+  
+  @keyframes moveUp{
+      0%{ transform: translateY(50px);}
+    100%{ transform: translateY(-50x);}
+  }
+  
+  @keyframes grow{
+    from  { height: 0px;
+           width: 0px;}
+      to { height: 65px;
+            width: 65px;}
+  }
+
+  @keyframes font-small{
+    from  { font-size: 20px;}
+      to  { font-size: 0px;}
+  }
+  
+  
+  @keyframes make_invisible
+  {
+    from { height: auto;
+            width: auto; }
+      to { height:   0%;
+            width:   0%; }
+  }
+
+  @keyframes make_visible
+  {
+    from { height: auto;
+            width: auto; }
+      to { height:   0%;
+            width:   0%; }
+  }
+  
+
+
+  
+  @keyframes fadeOutBackground{
+    100%
+    {
+      background-color: rgba(153, 205, 50, 0);
+    }
+    0%
+    {
+      background-color: yellowgreen;
+    }
+  }
+  
+  
+  @keyframes displayNone
+  {
+    from { display: flex;
+             }
+      to { display: none;
+             }
+  }
+
+
+
+
+
  *{
    scroll-behavior: smooth;
  }

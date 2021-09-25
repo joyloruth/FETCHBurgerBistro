@@ -57,9 +57,10 @@ leftBtn.addEventListener("click", function(){
 });
 
 function initMap(){
-  var location = {lat: 36.1622767, lng: -86.7742984};
+  var location = {lat: 36.193180, lng: -86.803740};
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4, 
     center: location
   });
 }
+
