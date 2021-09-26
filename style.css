@@ -10,7 +10,7 @@
 
  
   
-  #preloader{
+  preloader{
     width:100%;
     height:100vh;
     background-color: yellowgreen;
@@ -27,7 +27,6 @@
     z-index: 10000;
     flex-direction: column;
     color:orangered;
-    
   }
   #preloader-images{
     margin-bottom: 20px;
@@ -1094,8 +1093,187 @@ footer{
     width:375px;
     height:200px;
   }
+}
 
 
+/*responsive layout for iPhone 6/7/8 */
+@media screen and (max-width: 414px) 
+{
+  body{
+    width: 414px;
+    margin:0px;
+  }
+  .banner{
+    height: auto;
+    background-image: linear-gradient(#444243a8, #91211dc2), url("/images/backgrounds/burgerBanner.jpg");
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 414px;
+    grid-template-rows: 0fr .5fr 0fr ;
+    grid-template-areas: 
+    "left-sidebar" "navbar" "right-sidebar"
+    "banner-info" "banner-image";
+    width:auto;
+    justify-content: center;
+  }
+
+  .banner-info p{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #burger-menu{
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "burger-menu-title burger-menu-title burger-menu-title"
+                         "burger-left-side burger-middle-side burger-right-side"
+    
+  }
+  #burger-menu-pic{
+    width: 100px;
+    height: 100px;  
+  }
+
+  .burger-heading{
+    grid-area: burger-heading;
+    font-family: special elite;
+    color:black;
+    font-size: 20px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    height: 55px;
+  }
+
+  
+
+  #about{
+    background-color: yellowgreen;
+    height: auto;
+    display: grid;
+    grid-template-columns:  1fr ;
+    grid-template-rows: .0fr 1fr 1fr .0fr;
+    grid-template-areas: "left-sidebar" 
+                         "slider"
+                         "about-info"
+                         "right-sidebar" ;
+    padding:20px;
+  }
+
+  #burger-special{
+    display: inline-flex;
+    padding:5px;justify-content: center;
+    align-items: center;
+    width: 414px;
+  }
+
+  .burger-special-info{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.603);
+    box-shadow: -3px 0px 10px white;
+  }
+
+  #new-menu-items{
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .new-menu-items-leftSide{
+    width:100%;
+    margin:5px;
+  }
+
+  #food-list{
+    background-color: yellowgreen;
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+  }
+  .food-list-item{
+    margin: 15px;
+  }
+  
+  .food-list-item button{
+    background-color: aliceblue;
+  }
+
+  #food-list-items{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #side-items-section{
+    width: 414px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  #side-items-section p{
+    text-align: center;
+  }
+
+  #side-items{  
+    display: flex;
+    flex-wrap: wrap;
+    width: 414px;
+  }
+  .side-items{
+    margin: 5px;
+  }
+  .side-item{
+    margin: 0px;
+    padding: 5px;  
+  }
+  #side-item-img{
+    width: 80px;
+  }
+
+  #side-item-img:hover{
+    -webkit-animation: spin 1s linear;
+       -moz-animation: spin 1s linear;
+         -o-animation: spin 1s linear;
+            animation: spin 1s linear;
+  } 
+
+  #side-items h3{
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  #contact{
+    width: 414px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #map{
+    width: 414px;
+    height: 200px;
+  }
+
+  #contact-info{
+    width: 414px;
+    height:200px;
+  }
 }
 
 
