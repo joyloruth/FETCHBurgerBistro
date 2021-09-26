@@ -822,8 +822,8 @@ footer{
 
   .burger-menu-title{
     grid-area: burger-menu-title;
-   background-color: blue;
-    
+   
+ 
   }
 
   #burger-menu-pic{
@@ -914,9 +914,13 @@ footer{
 
 
 
-/*responsive layout for mobile devices*/
+/*responsive layout for iPhone 6/7/8 */
 @media screen and (max-width: 375px) 
 {
+  body{
+    width:375px;
+    margin:0px;
+  }
   .banner{
     height: auto;
     background-image: linear-gradient(#444243a8, #91211dc2), url("/images/backgrounds/burgerBanner.jpg");
@@ -927,7 +931,7 @@ footer{
     grid-template-areas: 
     "left-sidebar" "navbar" "right-sidebar"
     "banner-info" "banner-image";
-    width:350px;
+    width:auto;
     justify-content: center;
   }
 
@@ -987,15 +991,21 @@ footer{
 
   #burger-special{
     display: inline-flex;
-    padding:50px;
+    padding:5px;justify-content: center;
+    align-items: center;
+    width: 375px;
+  }
+
+  .burger-special-info{
+    width: 50%;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    
+    background-color: rgba(255, 255, 255, 0.603);
+    box-shadow: -3px 0px 10px white;
   }
 
   #new-menu-items{
-    width:350px;
+    width:375px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1005,12 +1015,11 @@ footer{
   .new-menu-items-leftSide{
     width:100%;
     margin:5px;
-
   }
 
   #food-list{
     background-color: yellowgreen;
-    width:350px;
+    width:375px;
     display: flex;
     flex-direction: column;
   }
@@ -1020,18 +1029,16 @@ footer{
   
   .food-list-item button{
     background-color: aliceblue;
-
   }
+
   #food-list-items{
     margin: 0px;
     display: flex;
     flex-direction: column;
   }
   
-
   #side-items-section{
-    
-    width:350px;
+    width:375px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -1042,29 +1049,22 @@ footer{
 
   #side-items-section p{
     text-align: center;
-  
   }
 
-
-  #side-items{
-    
+  #side-items{  
     display: flex;
     flex-wrap: wrap;
-    width:350px;
+    width:375px;
   }
-
   .side-items{
     margin: 5px;
-    
   }
   .side-item{
     margin: 0px;
-    padding: 5px;
-    
+    padding: 5px;  
   }
   #side-item-img{
     width: 80px;
-    
   }
 
   #side-item-img:hover{
@@ -1080,20 +1080,19 @@ footer{
   }
 
   #contact{
-    width:350px;
+    width:375px;
     display: flex;
     flex-direction: column-reverse;
   }
 
   #map{
-    width:350px;
+    width:375px;
     height: 200px;
   }
 
   #contact-info{
-    width:350px;
+    width:375px;
     height:200px;
-
   }
 
 
