@@ -13,13 +13,14 @@
   #preloader{
     width:100%;
     height:100vh;
+    /*background-image: linear-gradient(to right top, #c5ed56, #c6ef5c, #c7f262, #c8f467, #c9f66d, #c6f669, #c4f665, #c1f661, #b9f352, #b1f142, #a8ee2f, #9feb11);*/
     background-color: yellowgreen;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     background-size: cover;
-    animation:   fadeOutBackground 1s ease, make_invisible 1s ease-out;
+    animation:   fadeOutBackground 1s ease , make_invisible 1s ease-out;
     animation-delay: 11s, 12s;
     animation-fill-mode: forwards, forwards;
     overflow: hidden;
@@ -28,6 +29,7 @@
     flex-direction: column;
     color:orangered;
   }
+  
   #preloader-images{
     margin-bottom: 20px;
   }
@@ -38,6 +40,7 @@
     font-family: special elite;
     font-size: 40px;
     font-weight: 800;
+    text-shadow: 3px 3px 3px#80c009;
   }
 
   
@@ -53,7 +56,6 @@
     animation-delay: .5s, 0s, 9s;
     animation-fill-mode: forwards;
     transition: all 1s ease-in-out;
-  
   }
   #preloader-fries{
     animation: opacity 1s ease, moveUp 1s ease-in-out alternate infinite, grow 1s ease-in-out alternate-reverse infinite, make_invisible 1s ease-out ;
@@ -157,6 +159,7 @@
   transition: all 1s;
   font-weight: 800;
   text-transform: capitalize;
+
 }
 
 .menu:hover{
@@ -606,8 +609,9 @@
   font-family: special elite;
 }
 
-#side-item-img{
+#side-item-img {
   width: 80px;
+  animation: bounce 2s linear alternate infinite ;
 }
 
 #side-items-section{
@@ -919,13 +923,14 @@ footer{
   body{
     width:375px;
     margin:0px;
+    background-color: aquamarine;
   }
   .banner{
     height: auto;
     background-image: linear-gradient(#444243a8, #91211dc2), url("/images/backgrounds/burgerBanner.jpg");
     display: grid;
     padding: 5px;
-    grid-template-columns: 350px;
+    grid-template-columns: 375px;
     grid-template-rows: 0fr .5fr 0fr ;
     grid-template-areas: 
     "left-sidebar" "navbar" "right-sidebar"
@@ -1397,10 +1402,10 @@ footer{
   100%{-webkit-transform: rotate(360deg);}
   
 }
-
+*/
 @keyframes bounce{
-  100%{transform: translateY(30px);}
-    0%{transform: translateY(-30px);}
+  100%{transform: translateY(0px);}
+    0%{transform: translateY(-20px);}
 }
 
 @keyframes bounceforward{
