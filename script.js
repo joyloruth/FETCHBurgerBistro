@@ -64,3 +64,4 @@ function initMap(){
   });
 }
 
+console.log("print");
